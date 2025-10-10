@@ -15,11 +15,19 @@ _Reimagining train operations with adaptive signalling, real-time intelligence, 
 
 **Dynamic–AI Rail Signalling** is an ongoing research-driven project that integrates **Artificial Intelligence (AI)** with **Dynamic Moving Block Signalling** to revolutionize railway operations and enhance safety, speed, and efficiency.
 
-Traditional **Fixed Block Systems** divide railway tracks into rigid, predefined sections, which often leads to underutilization and delays. This project overcomes that limitation by implementing **Dynamic Moving Blocks**, where block lengths vary continuously in real time based on:
+Traditional **Fixed Block Systems** divide railway tracks into rigid, predefined sections, which often leads to underutilization and delays. 
+<img width="1813" height="832" alt="Screenshot 2025-10-10 152458" src="https://github.com/user-attachments/assets/9f11cf7e-535d-4c4b-93a3-d58a9eb5b0a9" />
+<img width="1812" height="833" alt="Screenshot 2025-10-10 152405" src="https://github.com/user-attachments/assets/9ee7db94-3eed-4fe4-859a-84a9c50722f1" />
+
+
+This project overcomes that limitation by implementing **Dynamic Moving Blocks**, where block lengths vary continuously in real time based on:
 - Train **speed**
 - **Braking distance**
 - **Track occupancy**
 - **Congestion level**
+  <img width="1234" height="625" alt="Screenshot 2025-09-25 103124" src="https://github.com/user-attachments/assets/b0592d7a-0158-4d66-9e1f-a0dacbb7f51d" />
+<img width="1233" height="622" alt="Screenshot 2025-09-25 103143" src="https://github.com/user-attachments/assets/ea60e7dc-ab7b-4cde-a2d5-c5b010fba252" />
+
 
 The system also introduces an **AI Decision Support Engine** that assists **Station Masters** by offering intelligent recommendations for:
 - 🚉 Platform allotment  
@@ -62,23 +70,6 @@ The system also introduces an **AI Decision Support Engine** that assists **Stat
 
 ## 🧩 Project Structure
 
-flowchart TD
-%% Input Layer
-A[Train Data Input] -->|Speed, Position, Braking Distance| B[Dynamic Block Computation]
+<img width="1052" height="470" alt="image" src="https://github.com/user-attachments/assets/da7239a4-df05-49e7-bb5c-e0e5b04104ff" />
 
-%% Dynamic Block Computation
-B -->|Check Track Occupancy| C{Is Block Safe?}
-C -->|Yes| D[Update Signals]
-C -->|No| E[Delay Train / Alert Operator]
 
-%% AI Decision Engine
-D --> F[AI Decision Engine]
-E --> F
-F -->|Evaluate Station Congestion| G[Platform Allotment & Train Sequencing]
-
-%% Visualization
-G --> H[Web Visualization Interface]
-H --> I[Operator / Station Master]
-
-%% Feedback Loop for Multiple Trains
-I -->|Train Updates| A

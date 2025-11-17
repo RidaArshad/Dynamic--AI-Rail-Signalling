@@ -1,4 +1,4 @@
-# 🚉 Dynamic–AI Rail Signalling
+# 🚉 RailGuard — Dynamic Railway Traffic Simulation & Safety System
 
 ![Status](https://img.shields.io/badge/Status-Ongoing-blue)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-yellow)
